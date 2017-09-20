@@ -70,7 +70,7 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 # SCREEN
 DEVICE_RESOLUTION := 1080x1920
 BOARD_HAS_FLIPPED_SCREEN := false
-PRODUCT_AAPT_CONFIG := normal
+#PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 TARGET_USES_ION := true
 
@@ -168,10 +168,11 @@ TARGET_SUPPORTS_64_BIT_APPS := true
 TARGET_USES_UNCOMPRESSED_KERNEL := true
 #TARGET_KERNEL_CONFIG := merge_hi3635_defconfig
 #HAVE_SELINUX := true
-TARGET_PREBUILT_KERNEL := device/huawei/hwgra-kernel
+TARGET_PREBUILT_KERNEL := device/huawei/hwgra-kernel/kernel
 
 # KERNEL CONFIG
-BOARD_KERNEL_CMDLINE := androidboot.hardware=hi3635 androidboot.selinux=permissive no_console_suspend=1 mem=3072M coherent_pool=512K mmcparts=mmcblk0:p1(vrl),p2(vrl_backup),p6(modemnvm_factory),p9(splash),p10(modemnvm_backup),p11(modemnvm_img),p12(modemnvm_system),p14(3rdmodemnvm),p15(3rdmodemnvmback),p17(modem_om),p20(modemnvm_update),p30(modem),p31(modem_dsp),p32(dfx),p33(3rdmodem) cpuidle_sysfs_switch=1
+#BOARD_KERNEL_CMDLINE := androidboot.hardware=hi3635 androidboot.selinux=permissive no_console_suspend=1 mem=3072M coherent_pool=512K mmcparts=mmcblk0:p1(vrl),p2(vrl_backup),p6(modemnvm_factory),p9(splash),p10(modemnvm_backup),p11(modemnvm_img),p12(modemnvm_system),p14(3rdmodemnvm),p15(3rdmodemnvmback),p17(modem_om),p20(modemnvm_update),p30(modem),p31(modem_dsp),p32(dfx),p33(3rdmodem) cpuidle_sysfs_switch=1
+BOARD_KERNEL_CMDLINE := androidboot.hardware=hi3635 androidboot.selinux=disabled no_console_suspend=1 mem=3072M coherent_pool=512K mmcparts=mmcblk0:p1(vrl),p2(vrl_backup),p6(modemnvm_factory),p9(splash),p10(modemnvm_backup),p11(modemnvm_img),p12(modemnvm_system),p14(3rdmodemnvm),p15(3rdmodemnvmback),p17(modem_om),p20(modemnvm_update),p30(modem),p31(modem_dsp),p32(dfx),p33(3rdmodem) cpuidle_sysfs_switch=1
 BOARD_KERNEL_BASE := 0x00678000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x07588000 --tags_offset 0xffb88000

@@ -203,7 +203,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.build.selinux=0 \
-	persist.sys.root_access=3
+	persist.sys.root_access=3 \
+    ro.zygote=zygote64_32
 	#ro.build.selinux=0 \
 
 ADDITIONAL_DEFAULT_PROPERTIES += \
@@ -220,3 +221,6 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 # DALVIK AND MEMORY
 #$(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
 #$(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
+
+PRODUCT_COPY_FILES += \
+    system/core/rootdir/init.zygote64_32.rc:root/init.zygote64_32.rc
