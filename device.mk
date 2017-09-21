@@ -224,3 +224,7 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 
 PRODUCT_COPY_FILES += \
     system/core/rootdir/init.zygote64_32.rc:root/init.zygote64_32.rc
+    
+# TEST TO FIX ERROR
+PRODUCT_COPY_FILES += \
+    device/huawei/hwgra/overlay:vendor/overlay
