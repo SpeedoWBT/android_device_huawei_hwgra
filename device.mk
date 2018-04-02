@@ -205,13 +205,11 @@ PRODUCT_COPY_FILES += \
 	$(BOOT_RAMDISK_SRC)/fstab.ranchu:$(BOOT_RAMDISK_DST)/fstab.ranchu \
 	$(BOOT_RAMDISK_SRC)/etc/custom.init.mods.rc:$(BOOT_RAMDISK_DST)/custom.init.mods.rc \
 	$(BOOT_RAMDISK_SRC)/etc/custom.init.usb.rc:$(BOOT_RAMDISK_DST)/custom.init.usb.rc \
-	$(BOOT_RAMDISK_SRC)/etc/init.goldfish.rc:$(BOOT_RAMDISK_DST)/init.goldfish \
+	$(BOOT_RAMDISK_SRC)/etc/init.goldfish.rc:$(BOOT_RAMDISK_DST)/init.goldfish.rc \
 	$(BOOT_RAMDISK_SRC)/etc/init.ranchu.rc:$(BOOT_RAMDISK_DST)/init.ranchu.rc \
 	$(BOOT_RAMDISK_SRC)/etc/init.hi3635.rc:$(BOOT_RAMDISK_DST)/init.hi3635.rc \
 	$(BOOT_RAMDISK_SRC)/etc/init.recovery.hi3635.rc:$(BOOT_RAMDISK_DST)/init.recovery.hi3635.rc \
 	$(BOOT_RAMDISK_SRC)/etc/init.recovery.usb.rc:$(BOOT_RAMDISK_DST)/init.recovery.usb.rc \
-	$(BOOT_RAMDISK_SRC)/etc/init.hi3635.usb.rc:$(BOOT_RAMDISK_DST)/init.hi3635.usb.rc \
-	$(BOOT_RAMDISK_SRC)/etc/init.hi3635.gps.rc:$(BOOT_RAMDISK_DST)/init.hi3635.gps.rc \
 	$(BOOT_RAMDISK_SRC)/etc/ueventd.hi3635.rc:$(BOOT_RAMDISK_DST)/ueventd.hi3635.rc \
 	$(BOOT_RAMDISK_SRC)/etc/ueventd.goldfish.rc:$(BOOT_RAMDISK_DST)/ueventd.goldfish.rc \
 	$(BOOT_RAMDISK_SRC)/etc/ueventd.ranchu.rc:$(BOOT_RAMDISK_DST)/ueventd.ranchu.rc \
@@ -229,6 +227,7 @@ PRODUCT_COPY_FILES += \
 	$(BOOT_RAMDISK_SRC)/etc/vendor.init.platform.rc:$(BOOT_RAMDISK_DST)/vendor.init.platform.rc \
 	$(BOOT_RAMDISK_SRC)/etc/vendor.init.post-fs-data.rc:$(BOOT_RAMDISK_DST)/vendor.init.post-fs-data.rc \
 	$(BOOT_RAMDISK_SRC)/etc/vendor.init.tee.rc:$(BOOT_RAMDISK_DST)/vendor.init.tee.rc \
+	$(BOOT_RAMDISK_SRC)/etc/vendor.init.5844.rc:$(BOOT_RAMDISK_DST)/vendor.init.5844.rc \
 	$(BOOT_RAMDISK_SRC)/sbin/teecd:$(BOOT_RAMDISK_DST)/sbin/teecd \
 	$(BOOT_RAMDISK_SRC)/sbin/e2fsck_s:$(BOOT_RAMDISK_DST)/sbin/e2fsck_s \
 	$(BOOT_RAMDISK_SRC)/sbin/emmc_partation:$(BOOT_RAMDISK_DST)/sbin/emmc_partation \
