@@ -18,7 +18,7 @@
 PRODUCT_RELEASE_NAME := GRA-L09
 
 # Inherit device configuration
-$(call inherit-product, device/huawei/hwgra/full_hwgra.mk)
+$(call inherit-product, device/huawei/hwgra/lineage_hwgra.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
