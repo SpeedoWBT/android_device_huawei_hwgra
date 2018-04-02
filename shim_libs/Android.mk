@@ -35,9 +35,3 @@ LOCAL_SHARED_LIBRARIES := libcamera_client
 LOCAL_MODULE := libshim_camera
 LOCAL_MODULE_TAGS := optional
 include $(BUILD_SHARED_LIBRARY)
-
-include $(CLEAR_VARS)
-LOCAL_SRC_FILES := hw_rild.c
-LOCAL_MODULE := libhw_rild
-LOCAL_MODULE_TAGS := optional
-include $(BUILD_SHARED_LIBRARY)
