@@ -25,35 +25,35 @@ DEVICE_PACKAGE_OVERLAYS += \
 	device/huawei/hwgra/overlay
 
 # AUDIO
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
-	$(LOCAL_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf
+#PRODUCT_COPY_FILES += \
+#	$(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
+#	$(LOCAL_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
 # NFC
-PRODUCT_COPY_FILES += \
-	frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml \
-	frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
-	frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
-	frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
-	packages/apps/Nfc/migrate_nfc.txt:system/etc/updatecmds/migrate_nfc.txt \
-	$(LOCAL_PATH)/nfc/libnfc-nxp_grace.conf:system/etc/libnfc-nxp.conf \
-	$(LOCAL_PATH)/nfc/libnfc-brcm_grace.conf:system/etc/libnfc-brcm.conf
+#PRODUCT_COPY_FILES += \
+#	frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml \
+#	frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
+#	frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
+#	frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
+#	packages/apps/Nfc/migrate_nfc.txt:system/etc/updatecmds/migrate_nfc.txt \
+#	$(LOCAL_PATH)/nfc/libnfc-nxp_grace.conf:system/etc/libnfc-nxp.conf \
+#	$(LOCAL_PATH)/nfc/libnfc-brcm_grace.conf:system/etc/libnfc-brcm.conf
 
 # GPS libs
 #Somehow CM looks for this file with another name
 #I'l keep the stock ones there too.
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/vendor/system/lib64/hw/gps47531.default.so:system/lib64/hw/gps.hi3635.so
+#PRODUCT_COPY_FILES += \
+#	$(LOCAL_PATH)/vendor/system/lib64/hw/gps47531.default.so:system/lib64/hw/gps.hi3635.so
 
 # GPS config
-PRODUCT_COPY_FILES += \
-	    $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
-	    $(LOCAL_PATH)/gps/gps4752.conf:system/etc/gps4752.conf \
-	    $(LOCAL_PATH)/gps/gps4752config.xml:system/etc/gps4752config.xml \
-	    $(LOCAL_PATH)/gps/gps47531config.xml:system/etc/gps47531config.xml \
-	    $(LOCAL_PATH)/gps/gps47531config_beta.xml:system/etc/gps47531config_beta.xml \
-	    $(LOCAL_PATH)/gps/gps47531config_cl.xml:system/etc/gps47531config_cl.xml \
-	    $(LOCAL_PATH)/gps/gps47531config_cl_beta.xml:system/etc/gps47531config_cl_beta.xml
+#PRODUCT_COPY_FILES += \
+#	    $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
+#	    $(LOCAL_PATH)/gps/gps4752.conf:system/etc/gps4752.conf \
+#	    $(LOCAL_PATH)/gps/gps4752config.xml:system/etc/gps4752config.xml \
+#	    $(LOCAL_PATH)/gps/gps47531config.xml:system/etc/gps47531config.xml \
+#	    $(LOCAL_PATH)/gps/gps47531config_beta.xml:system/etc/gps47531config_beta.xml \
+#	    $(LOCAL_PATH)/gps/gps47531config_cl.xml:system/etc/gps47531config_cl.xml \
+#	    $(LOCAL_PATH)/gps/gps47531config_cl_beta.xml:system/etc/gps47531config_cl_beta.xml
 
 # FM RADIO quick hack to copy renamed files, does cm looks for default?
 PRODUCT_COPY_FILES += \
@@ -80,6 +80,11 @@ PRODUCT_PACKAGES += \
     libshim_icu \
     libshim_camera \
     libhw_log
+
+# debug
+PRODUCT_PACKAGES += \
+	dlopen32 \
+	dlopen64
 
 #Bluetooth Missing xml files after build
 #That's probably not the propper way to do it!
@@ -168,14 +173,14 @@ PRODUCT_PACKAGES += \
 		flp.default
 
 # NFC
-PRODUCT_PACKAGES += \
-	com.android.nfc_extras \
-	com.nxp.nfc.nq \
-	nfc_nci.pn54x.default \
-	NQNfcNci \
-	nqnfcee_access.xml \
-	nqnfcse_access.xml \
-	Tag
+#PRODUCT_PACKAGES += \
+#	com.android.nfc_extras \
+#	com.nxp.nfc.nq \
+#	nfc_nci.pn54x.default \
+#	NQNfcNci \
+#	nqnfcee_access.xml \
+#	nqnfcse_access.xml \
+#	Tag
 
 # WIFI
 PRODUCT_PACKAGES += \

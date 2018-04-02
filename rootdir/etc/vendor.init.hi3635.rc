@@ -512,6 +512,9 @@ on boot
      write /sys/class/net/rmnet_ims/queues/rx-0/rps_flow_cnt 0
      write /sys/class/net/rmnet_ims/queues/rx-0/rps_cpus f
 
+     #RIL PERMISSIONS ADDED 2.4.2018
+     chmod 0644 /proc/cmdline
+
 service charger_huawei /sbin/healthd -c
     class charger
     user root
