@@ -48,8 +48,8 @@ PRODUCT_COPY_FILES += \
 
 # FM RADIO quick hack to copy renamed files, does cm looks for default?
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/vendor/system/lib/hw/fm.bcm.hi3635.so:system/lib/hw/fm.bcm.default.so \
-	$(LOCAL_PATH)/vendor/system/lib64/hw/fm.bcm.hi3635.so:system/lib64/hw/fm.bcm.default.so
+	$(LOCAL_PATH)/prebuilts/fm.bcm.hi3635.so:system/lib/hw/fm.bcm.default.so \
+	$(LOCAL_PATH)/prebuilts/fm.bcm.hi3635_64.so:system/lib64/hw/fm.bcm.default.so
 
 # CAMERA
 PRODUCT_PACKAGES += \
