@@ -11,3 +11,5 @@ origin/boot6.0
 origin/kernelsource
 origin/recovery
 rescue
+init
+vendor

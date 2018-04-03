@@ -66,8 +66,7 @@ PRODUCT_PACKAGES += \
 	dlopen32 \
 	dlopen64
 
-#Bluetooth Missing xml files after build
-#That's probably not the propper way to do it!
+# Bluetooth config
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
 
@@ -112,6 +111,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
     $(LOCAL_PATH)/prebuilts/media_profiles.xml:system/etc/media_profiles.xml
 
+#FM
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/libfm_jni.so:system/lib/libfmjni.so \
+    $(LOCAL_PATH)/prebuilts/libfm_jni64.so:system/lib64/libfmjni.so
+
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
@@ -123,29 +127,29 @@ PRODUCT_PACKAGES += \
 
 # AUDIO
 PRODUCT_PACKAGES += \
-		audio.primary.default \
-		audio.a2dp.default \
-		audio.usb.default \
-		audio.r_submix.default \
-		libaudioutils \
-		libaudioroute \
-		libtinyalsa \
-		tinyplay \
-		tinycap \
-		tinymix \
-		tinypcminfo
+	audio.primary.default \
+	audio.a2dp.default \
+	audio.usb.default \
+	audio.r_submix.default \
+	libaudioutils \
+	libaudioroute \
+	libtinyalsa \
+	tinyplay \
+	tinycap \
+	tinymix \
+	tinypcminfo
 
 # FM RADIO
 PRODUCT_PACKAGES += \
-		FMRadio
+	FMRadio
 
 # GELLO
 PRODUCT_PACKAGES += \
-		Gello
+	Gello
 
 #?
 PRODUCT_PACKAGES += \
-		flp.default
+	flp.default
 
 # NFC
 PRODUCT_PACKAGES += \
