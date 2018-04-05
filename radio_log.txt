@@ -1,0 +1,656 @@
+04-04 03:33:45.287  2740  2740 I RILD    : rild_main: i: begin
+04-04 03:33:45.287  2740  2740 I RILD    :     rild_main: i: argc=1
+04-04 03:33:45.287  2740  2740 I RILD    :     rild_main: i: argv[0]=/system/bin/rild
+04-04 03:33:45.287  2740  2740 I RILD    :     rild_main: i: ClientId=0, argv rilLibPath=(null)
+04-04 03:33:45.287  2740  2740 I RILD    :     rild_main: o: read prop rild.libargs, result=8, value=-mmodem0
+04-04 03:33:45.287  2740  2740 I RILD    :     rild_main: o: read prop rild.libpath1, result=4, value=NULL
+04-04 03:33:45.287  2740  2740 I RILD    :     rild_main: o: read prop rild.libargs1, result=4, value=NULL
+04-04 03:33:45.287  2740  2740 I RILD    :     rild_main: o: read prop rild.libpath2, result=4, value=NULL
+04-04 03:33:45.287  2740  2740 I RILD    :     rild_main: o: read prop rild.libargs2, result=4, value=NULL
+04-04 03:33:45.287  2740  2740 I RILD    :     rild_main: o: rild1 boot config read prop rild.rild1_ready_to_start, result=5, value=false
+04-04 03:33:45.287  2740  2740 I RILD    :     rild_main: o: read prop ro.multi.rild, result=5, value=false
+04-04 03:33:45.287  2740  2740 I RILD    :     rild_main: o: read prop ro.config.hw_dsda, result=5, value=false
+04-04 03:33:45.287  2740  2740 I RILD    :     rild_main: o: read prop persist.dsds.enabled, result=5, value=false
+04-04 03:33:45.287  2740  2740 I RILD    :     rild_main: o: read prop ro.config.dsds_mode, result=4, value=umts
+04-04 03:33:45.287  2740  2740 I RILD    :     rild_main: o: read prop ro.telephony.default_network, result=1, value=9
+04-04 03:33:45.287  2740  2740 I RILD    :     rild_main: o: read prop ro.config.hw_device_mode, result=4, value=NULL
+04-04 03:33:45.287  2740  2740 I RILD    :     rild_main: o: read prop ro.config.hw_sglte, result=0, value=
+04-04 03:33:45.287  2740  2740 I RILD    :     rild_main: o: read prop ro.config.full_network_support, result=0, value=
+04-04 03:33:45.287  2740  2740 D RILD    : setCommrilModePropforUTL: update mode to ULG
+04-04 03:33:45.538  2740  2740 I RILD    :     rild_main: i: rilLibPath = /system/lib64/libbalong-ril.so
+04-04 03:33:45.708  2740  2740 D use-Rlog/RLOG-RIL_GU: [] RIL_Init: argc is 2.
+04-04 03:33:45.708  2740  2740 D use-Rlog/RLOG-RIL_GU: [] RIL_Init: aucModemId is modem0.
+04-04 03:33:45.708  2740  2740 D use-Rlog/RLOG-RIL_GU: [RIL_ReadPlatformCfg] ModemId is 0, AtChanIndex0 is 0, AtChanIndex1 is 1, AtChanIndex3 is 13.
+04-04 03:33:45.708  2740  2740 I use-Rlog/RLOG-RIL_GU: ro.hisi.test = false
+04-04 03:33:45.708  2740  2740 E use-Rlog/RLOG-RIL_GU: level_std = 3
+04-04 03:33:45.723  2740  2740 I use-Rlog/RLOG-RIL_GU: RIL_balong# init_pdp_context_tbl: START
+04-04 03:33:45.723  2740  2740 D use-Rlog/RLOG-RIL_GU: [init_pdp_context_tbl] g_PdpContextTblSize is 3.
+04-04 03:33:45.723  2740  2740 I use-Rlog/RLOG-RIL_GU: RIL_balong# init_pdp_context_tbl: END
+04-04 03:33:45.723  2740  2839 I use-Rlog/RLOG-RIL_GU: [modem_0] mainLoop enter.
+04-04 03:33:45.724  2740  2839 D use-Rlog/RLOG-RIL_GU: [modem_0]setRadioState newState = 1, oldState = 1
+04-04 03:33:45.725  2740  2839 D use-Rlog/RLOG-RIL_GU: [modem_0] modem_power_on.
+04-04 03:33:45.726  2740  2839 D use-Rlog/RLOG-RIL_GU: [modem_0][soc_modem_power_on] at_chan_0 is /dev/appvcom, at_chan_1 is /dev/appvcom1.
+04-04 03:33:45.726  2740  2839 I use-Rlog/RLOG-RIL_GU: [asyncCmdInit] devpath is /dev/appvcom.
+04-04 03:33:45.726  2740  2839 I use-Rlog/RLOG-RIL_GU: [asyncCmdInit] devpath is /dev/appvcom1.
+04-04 03:33:45.726  2740  2839 I use-Rlog/RLOG-RIL_GU: [asyncCmdInit] devpath is /dev/appvcom10.
+04-04 03:33:45.726  2740  2839 I use-Rlog/RLOG-RIL_GU: [asyncCmdInit] devpath is /dev/appvcom13.
+04-04 03:33:45.726  2740  2839 D use-Rlog/RLOG-RIL_GU: [modem_0][soc_modem_power_on] power on success
+04-04 03:33:45.727  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] > Start...
+04-04 03:33:45.727  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 30.
+04-04 03:33:45.727  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] > Start...
+04-04 03:33:45.728  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 30.
+04-04 03:33:45.729  2740  2839 D use-Rlog/RLOG-RIL_GU: [modem_0]In mainloop set radio to unavailable befor modem power on!
+04-04 03:33:45.729  2740  2816 D use-Rlog/RLOG-RILC: p_info 0x7f9320f000 free in userTimerCallback
+04-04 03:33:45.729  2740  2740 E RILC    : RIL_register: RIL version 9
+04-04 03:33:45.729  2740  2740 I RILC    : RIL_register: s_fdListen 9 socket rild
+04-04 03:33:45.729  2740  2740 D RILC    : ims socket is not connected in client 0
+04-04 03:33:45.731  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] > Start...
+04-04 03:33:45.731  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 30.
+04-04 03:33:45.742  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] > Start...
+04-04 03:33:45.742  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 30.
+04-04 03:33:46.727  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 29.
+04-04 03:33:46.728  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 29.
+04-04 03:33:46.732  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 29.
+04-04 03:33:46.743  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 29.
+04-04 03:33:47.727  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 28.
+04-04 03:33:47.728  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 28.
+04-04 03:33:47.732  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 28.
+04-04 03:33:47.743  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 28.
+04-04 03:33:48.728  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 27.
+04-04 03:33:48.728  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 27.
+04-04 03:33:48.732  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 27.
+04-04 03:33:48.743  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 27.
+04-04 03:33:49.728  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 26.
+04-04 03:33:49.728  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 26.
+04-04 03:33:49.732  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 26.
+04-04 03:33:49.743  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 26.
+04-04 03:33:50.728  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 25.
+04-04 03:33:50.728  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 25.
+04-04 03:33:50.732  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 25.
+04-04 03:33:50.743  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 25.
+04-04 03:33:51.728  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 24.
+04-04 03:33:51.728  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 24.
+04-04 03:33:51.732  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 24.
+04-04 03:33:51.744  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 24.
+04-04 03:33:51.785  2702  2702 D TelephonyManager: /proc/cmdline=androidboot.hardware=hi3635 androidboot.selinux=permissive no_console_suspend=1 mem=3072M coherent_pool=512K mmcparts=mmcblk0:p1(vrl),p2(vrl_backup),p6(modemnvm_factory),p9(splash),p10(modemnvm_backup),p11(modemnvm_img),p12(modemnvm_system),p14(3rdmodemnvm),p15(3rdmodemnvmback),p17(modem_om),p20(modemnvm_update),p30(modem),p31(modem_dsp),p32(dfx),p33(3rdmodem) cpuidle_sysfs_switch=1 androidboot.swtype=normal fastboot_version=GRA-6_0-2016_0229_1600_FASTBOOT setup_logctl=0 enter_recovery=0 androidboot.mode=normal pmu_nv_addr=0x3ffffc20 low_volt_flag=0 boardid=0x0000059a normal_reset_type=ColdReset pmu_event=RESET  TP_COLOR=210  GREY-D=0 ddr_die=1536M@0M ddr_die=1536M@1536M  productid=0x3eb07014 efuse_status=0 androidboot.serialno=S7M7N15603003620 recovery_update=0 boot_slice=0x000365e1 fblock=unlocked cpu_buck_reg=0x00000000 androidboot.hardware=hi3635  console=ttyS0 
+04-04 03:33:51.856  2704  2704 D TelephonyManager: /proc/cmdline=androidboot.hardware=hi3635 androidboot.selinux=permissive no_console_suspend=1 mem=3072M coherent_pool=512K mmcparts=mmcblk0:p1(vrl),p2(vrl_backup),p6(modemnvm_factory),p9(splash),p10(modemnvm_backup),p11(modemnvm_img),p12(modemnvm_system),p14(3rdmodemnvm),p15(3rdmodemnvmback),p17(modem_om),p20(modemnvm_update),p30(modem),p31(modem_dsp),p32(dfx),p33(3rdmodem) cpuidle_sysfs_switch=1 androidboot.swtype=normal fastboot_version=GRA-6_0-2016_0229_1600_FASTBOOT setup_logctl=0 enter_recovery=0 androidboot.mode=normal pmu_nv_addr=0x3ffffc20 low_volt_flag=0 boardid=0x0000059a normal_reset_type=ColdReset pmu_event=RESET  TP_COLOR=210  GREY-D=0 ddr_die=1536M@0M ddr_die=1536M@1536M  productid=0x3eb07014 efuse_status=0 androidboot.serialno=S7M7N15603003620 recovery_update=0 boot_slice=0x000365e1 fblock=unlocked cpu_buck_reg=0x00000000 androidboot.hardware=hi3635  console=ttyS0 
+04-04 03:33:52.729  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 23.
+04-04 03:33:52.729  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 23.
+04-04 03:33:52.733  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 23.
+04-04 03:33:52.744  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 23.
+04-04 03:33:53.729  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 22.
+04-04 03:33:53.729  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 22.
+04-04 03:33:53.733  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 22.
+04-04 03:33:53.744  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 22.
+04-04 03:33:54.729  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 21.
+04-04 03:33:54.729  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 21.
+04-04 03:33:54.733  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 21.
+04-04 03:33:54.744  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 21.
+04-04 03:33:55.729  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 20.
+04-04 03:33:55.729  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 20.
+04-04 03:33:55.733  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 20.
+04-04 03:33:55.744  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 20.
+04-04 03:33:56.730  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 19.
+04-04 03:33:56.730  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 19.
+04-04 03:33:56.733  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 19.
+04-04 03:33:56.745  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 19.
+04-04 03:33:57.730  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 18.
+04-04 03:33:57.730  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 18.
+04-04 03:33:57.733  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 18.
+04-04 03:33:57.745  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 18.
+04-04 03:33:58.730  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 17.
+04-04 03:33:58.730  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 17.
+04-04 03:33:58.734  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 17.
+04-04 03:33:58.745  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 17.
+04-04 03:33:59.730  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 16.
+04-04 03:33:59.730  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 16.
+04-04 03:33:59.734  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 16.
+04-04 03:33:59.745  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 16.
+04-04 03:34:00.730  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 15.
+04-04 03:34:00.730  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 15.
+04-04 03:34:00.734  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 15.
+04-04 03:34:00.745  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 15.
+04-04 03:34:01.731  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 14.
+04-04 03:34:01.731  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 14.
+04-04 03:34:01.734  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 14.
+04-04 03:34:01.746  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 14.
+04-04 03:34:02.731  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 13.
+04-04 03:34:02.731  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 13.
+04-04 03:34:02.734  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 13.
+04-04 03:34:02.746  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 13.
+04-04 03:34:03.731  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 12.
+04-04 03:34:03.731  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 12.
+04-04 03:34:03.734  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 12.
+04-04 03:34:03.746  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 12.
+04-04 03:34:04.731  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 11.
+04-04 03:34:04.731  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 11.
+04-04 03:34:04.734  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 11.
+04-04 03:34:04.746  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 11.
+04-04 03:34:05.121  3045  3057 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+04-04 03:34:05.535  3045  3045 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+04-04 03:34:05.670  3045  3045 D TelephonyRegistry: systemRunning register for intents
+04-04 03:34:05.731  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 10.
+04-04 03:34:05.731  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 10.
+04-04 03:34:05.735  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 10.
+04-04 03:34:05.746  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 10.
+04-04 03:34:06.017  3354  3354 D TDC     : updateOrInsert: inserting: Modem { uuid=modem, state=0, rilModel=0, rat={}, maxActiveVoiceCall=1, maxActiveDataCall=1, maxStandby=1 }
+04-04 03:34:06.017  3354  3354 D TDC     : updateOrInsert: inserting: Sim { uuid=sim, modemUuid=modem, state=0 }
+04-04 03:34:06.026  3354  3354 D TelephonyComponentFactory: classLoader = dalvik.system.PathClassLoader[DexPathList[[],nativeLibraryDirectories=[/system/lib64, /vendor/lib64]]]
+04-04 03:34:06.035  3354  3354 E TelephonyComponentFactory: Error loading TelephonyComponentFactory
+04-04 03:34:06.036  3354  3354 D TelephonyManager: getLteOnCdmaMode=0 curVal=-1 product_type='' lteOnCdmaProductType=''
+04-04 03:34:06.047  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:06.047  3354  3354 I PhoneFactory: Cdma Subscription set to 0
+04-04 03:34:06.048  3354  3354 I PhoneFactory: RILClassname is HwHisiRIL
+04-04 03:34:06.048  3354  3354 I PhoneFactory: Network Mode set to 9
+04-04 03:34:06.089  3354  3354 D RILJ    : RIL(context, preferredNetworkType=9 cdmaSubscription=0)
+04-04 03:34:06.096  3354  3354 D RILJ    : Starting RILReceiver0 [SUB0]
+04-04 03:34:06.099  2740  2816 I RILC    : **RILD ListenCallback**
+04-04 03:34:06.099  2740  2816 I RILC    : listenCallback: fdListen: 9
+04-04 03:34:06.099  2740  2816 I RILC    : listenCallback: new fd: 10, client id: 0
+04-04 03:34:06.099  3354  3394 I RILJ    : (0) Connected to 'rild' socket
+04-04 03:34:06.099  2740  2816 D use-Rlog/RLOG-RILC: fd = 10, status = 1
+04-04 03:34:06.099  2740  2816 D use-Rlog/RLOG-RILC: fd = -1, status = 0
+04-04 03:34:06.100  2740  2816 I RILC    : libril: new connection
+04-04 03:34:06.100  2740  2816 I RILC    : RIL_onUnsolicitedSendResponse: UNSOL_RIL_CONNECTED,client_id: 0
+04-04 03:34:06.100  2740  2816 I RILC    : RIL_onUnsolicitedSendResponse: UNSOL_RESPONSE_RADIO_STATE_CHANGED,client_id: 0
+04-04 03:34:06.100  2740  2816 D use-Rlog/RLOG-RIL_GU: [modem_0]currentState = 1
+04-04 03:34:06.100  2740  2816 D use-Rlog/RLOG-RIL_GU: Vendor RIL Build date: Mar 12 2016 13:09:13
+04-04 03:34:06.100  3354  3394 D RILJ    : [UNSL]< UNSOL_RIL_CONNECTED {9} [SUB0]
+04-04 03:34:06.100  2740  2816 I RILC    : RIL Daemon version: android hisilicon balong-ril 1.0
+04-04 03:34:06.101  3354  3394 D RILJ    : [3648]> RADIO_POWER off [SUB0]
+04-04 03:34:06.105  3354  3354 D RILJ    : [3649]> GET_HARDWARE_CONFIG [SUB0]
+04-04 03:34:06.108  3354  3394 D RILJ    : [3650]> RIL_REQUEST_CDMA_SET_SUBSCRIPTION_SOURCE : 0 [SUB0]
+04-04 03:34:06.109  3354  3354 I PhoneFactory: Creating SubscriptionController
+04-04 03:34:06.109  3354  3354 D TelephonyComponentFactory: initSubscriptionController
+04-04 03:34:06.110  3354  3394 D RILJ    : setCellInfoListRate: 2147483647 [SUB0]
+04-04 03:34:06.110  3354  3394 D RILJ    : [3651]> RIL_REQUEST_SET_CELL_INFO_LIST_RATE [SUB0]
+04-04 03:34:06.110  2740  2816 D use-Rlog/RLOG-RIL_GU: [modem_0]onRequest[23]:RADIO_POWER[0]
+04-04 03:34:06.110  2740  2816 D use-Rlog/RLOG-RIL_GU: [modem_0]onRequest: RADIO_POWER failed, sState= 1
+04-04 03:34:06.110  2740  2816 I RILC    : RIL_onRequestComplete: free RIL_Token 0x7f9363c140
+04-04 03:34:06.110  2740  2816 D use-Rlog/RLOG-RIL_GU: [modem_0]onRequest: GET_HARDWARE_CONFIG
+04-04 03:34:06.110  2740  2816 D use-Rlog/RLOG-RIL_GU: [modem_0]onRequest: GET_HARDWARE_CONFIG failed, sState= 1
+04-04 03:34:06.110  2740  2816 I RILC    : RIL_onRequestComplete: free RIL_Token 0x7f9363c140
+04-04 03:34:06.110  2740  2816 D use-Rlog/RLOG-RIL_GU: [modem_0]onRequest[77]:CDMA_SET_SUBSCRIPTION_SOURCE[0]
+04-04 03:34:06.110  2740  2816 D use-Rlog/RLOG-RIL_GU: [modem_0]onRequest: CDMA_SET_SUBSCRIPTION_SOURCE failed, sState= 1
+04-04 03:34:06.110  2740  2816 I RILC    : RIL_onRequestComplete: free RIL_Token 0x7f9363c140
+04-04 03:34:06.112  2740  2816 D use-Rlog/RLOG-RIL_GU: [modem_0]onRequest[110]:SET_UNSOL_CELL_INFO_LIST_RATE[2147483647]
+04-04 03:34:06.112  2740  2816 D use-Rlog/RLOG-RIL_GU: [modem_0]onRequest: SET_UNSOL_CELL_INFO_LIST_RATE failed, sState= 1
+04-04 03:34:06.112  3354  3394 D RILJ    : [UNSL]< UNSOL_RESPONSE_RADIO_STATE_CHANGED RADIO_UNAVAILABLE [SUB0]
+04-04 03:34:06.112  2740  2816 I RILC    : RIL_onRequestComplete: free RIL_Token 0x7f9363c140
+04-04 03:34:06.118  3354  3394 D RilRequest: [3648]< RADIO_POWER error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+04-04 03:34:06.119  3354  3394 D RilRequest: [3649]< GET_HARDWARE_CONFIG error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+04-04 03:34:06.120  3354  3394 D RilRequest: [3650]< RIL_REQUEST_CDMA_SET_SUBSCRIPTION_SOURCE error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+04-04 03:34:06.120  3354  3394 D RilRequest: [3651]< RIL_REQUEST_SET_CELL_INFO_LIST_RATE error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+04-04 03:34:06.129  3354  3354 D SubscriptionController: [SubscriptionController] init by Context
+04-04 03:34:06.138  3354  3354 D UiccController: Creating UiccController
+04-04 03:34:06.138  3354  3354 D TelephonyComponentFactory: makePhone
+04-04 03:34:06.171  3354  3354 D TelephonyTester: register for intent action=com.android.internal.telephony.action_detached
+04-04 03:34:06.171  3354  3354 D TelephonyTester: register for intent action=com.android.internal.telephony.action_attached
+04-04 03:34:06.180  3354  3354 D Phone   : mDoesRilSendMultipleCallRing=true
+04-04 03:34:06.180  3354  3354 D Phone   : mCallRingDelay=0
+04-04 03:34:06.180  3354  3354 D TelephonyComponentFactory: makeSmsStorageMonitor
+04-04 03:34:06.185  3354  3354 D TelephonyComponentFactory: makeSmsUsageMonitor
+04-04 03:34:06.204  3354  3354 D RILJ    : [3652]> RIL_REQUEST_START_LCE [SUB0]
+04-04 03:34:06.204  3354  3354 I RILJ-HwHisiRil: : Unsupported request 132
+04-04 03:34:06.204  3354  3354 D RilRequest: [3652]< RIL_REQUEST_START_LCE error: com.android.internal.telephony.CommandException: REQUEST_NOT_SUPPORTED ret=
+04-04 03:34:06.205  3354  3354 D TelephonyComponentFactory: makeGsmCdmaCallTracker
+04-04 03:34:06.229  3354  3354 D TelephonyComponentFactory: makeIccPhoneBookInterfaceManager
+04-04 03:34:06.243  3354  3354 D TelephonyComponentFactory: makeIccSmsInterfaceManager
+04-04 03:34:06.266  3354  3354 E RIL_ImsSms: getFormat should never be called from here!
+04-04 03:34:06.266  3354  3354 D SMSDispatcher: SMSDispatcher: ctor mSmsCapable=true format=unknown mSmsSendDisabled=false
+04-04 03:34:06.266  3354  3354 D RIL_ImsSms: ImsSMSDispatcher created
+04-04 03:34:06.271  3354  3354 D SMSDispatcher: SMSDispatcher: ctor mSmsCapable=true format=3gpp2 mSmsSendDisabled=false
+04-04 03:34:06.271  3354  3354 D CdmaSMSDispatcher: CdmaSMSDispatcher created
+04-04 03:34:06.297  3354  3354 D TelephonyComponentFactory: getIDeviceIdleController
+04-04 03:34:06.300  2740  2816 D use-Rlog/RLOG-RILC: p_info 0x7f9320f000 free in userTimerCallback
+04-04 03:34:06.300  2740  2816 D use-Rlog/RLOG-RILC: p_info 0x7f9362d180 free in userTimerCallback
+04-04 03:34:06.305  3354  3354 D TelephonyComponentFactory: getIDeviceIdleController
+04-04 03:34:06.306  3354  3354 D GsmInboundSmsHandler: created InboundSmsHandler
+04-04 03:34:06.314  3354  3354 D TelephonyComponentFactory: getIDeviceIdleController
+04-04 03:34:06.319  3354  3354 D TelephonyComponentFactory: getIDeviceIdleController
+04-04 03:34:06.319  3354  3354 D CdmaInboundSmsHandler: created InboundSmsHandler
+04-04 03:34:06.329  3354  3354 D SMSDispatcher: SMSDispatcher: ctor mSmsCapable=true format=3gpp mSmsSendDisabled=false
+04-04 03:34:06.329  3354  3354 D GsmSMSDispatcher: GsmSMSDispatcher created
+04-04 03:34:06.334  3354  3423 D CdmaInboundSmsHandler: StartupState.processMessage:6
+04-04 03:34:06.334  3354  3421 D GsmInboundSmsHandler: StartupState.processMessage:6
+04-04 03:34:06.335  3354  3421 D GsmInboundSmsHandler: entering Idle state
+04-04 03:34:06.335  3354  3423 D CdmaInboundSmsHandler: entering Idle state
+04-04 03:34:06.335  3354  3421 D GsmInboundSmsHandler: IdleState.processMessage:5
+04-04 03:34:06.335  3354  3421 D GsmInboundSmsHandler: Idle state processing message type 5
+04-04 03:34:06.336  3354  3354 D TelephonyComponentFactory: makeIccCardProxy
+04-04 03:34:06.336  3354  3421 D GsmInboundSmsHandler: mWakeLock released wakelockcount = 0
+04-04 03:34:06.336  3354  3423 D CdmaInboundSmsHandler: IdleState.processMessage:5
+04-04 03:34:06.337  3354  3423 D CdmaInboundSmsHandler: Idle state processing message type 5
+04-04 03:34:06.338  3354  3423 D CdmaInboundSmsHandler: mWakeLock released wakelockcount = 0
+04-04 03:34:06.342  3354  3354 D IccCardProxy: ctor: ci=com.android.internal.telephony.HwHisiRIL@6c02d96 phoneId=0
+04-04 03:34:06.342  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:06.342  3354  3354 D CdmaSSM : cdmaSSM constructor: 0
+04-04 03:34:06.343  3354  3354 D IccCardProxy: update icc_operator_numeric=
+04-04 03:34:06.343  3354  3354 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.sim.operator.numeric value:  propVal=
+04-04 03:34:06.344  3354  3354 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.sim.operator.iso-country value:  propVal=
+04-04 03:34:06.344  3354  3354 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.sim.operator.alpha value:  propVal=
+04-04 03:34:06.345  3354  3354 E IccCardProxy: setExternalState: set mPhoneId=0 mExternalState=NOT_READY
+04-04 03:34:06.345  3354  3354 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.sim.state value: NOT_READY propVal=NOT_READY
+04-04 03:34:06.346  3354  3354 D IccCardProxy: broadcastIccStateChangedIntent intent ACTION_SIM_STATE_CHANGED value=NOT_READY reason=null for mPhoneId=0
+04-04 03:34:06.350  3354  3354 D TelephonyComponentFactory: getCdmaSubscriptionSourceManagerInstance
+04-04 03:34:06.350  3354  3354 D TelephonyComponentFactory: makeEriManager
+04-04 03:34:06.355  3354  3354 D GsmCdmaPhone: [GsmCdmaPhone] Precise phone type 1
+04-04 03:34:06.355  3354  3354 D RILJ    : setPhoneType=1 old value=0 [SUB0]
+04-04 03:34:06.355  3354  3354 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.current.phone-type value: 1 propVal=1
+04-04 03:34:06.358  3354  3354 D IccCardProxy: Setting radio tech UMTS
+04-04 03:34:06.358  3354  3354 D IccCardProxy: updateQuietMode: 3GPP subscription -> newQuietMode=false
+04-04 03:34:06.358  3354  3354 D IccCardProxy: updateQuietMode: no changes don't setExternalState
+04-04 03:34:06.358  3354  3354 D IccCardProxy: updateQuietMode: QuietMode is false (app_type=1 cdmaSource=-1)
+04-04 03:34:06.358  3354  3354 D TelephonyComponentFactory: makeServiceStateTracker
+04-04 03:34:06.406  3354  3354 W CarrierConfigManager: Error getting config for subId -1 ICarrierConfigLoader is null
+04-04 03:34:06.408  3045  3316 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+04-04 03:34:06.426  3354  3354 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.network.type value: Unknown propVal=Unknown
+04-04 03:34:06.427  3354  3354 D RILJ    : [3653]> SIGNAL_STRENGTH [SUB0]
+04-04 03:34:06.429  2740  2816 D use-Rlog/RLOG-RIL_GU: [modem_0]onRequest: SIGNAL_STRENGTH
+04-04 03:34:06.429  2740  2816 D use-Rlog/RLOG-RIL_GU: [modem_0]onRequest: SIGNAL_STRENGTH failed, sState= 1
+04-04 03:34:06.429  2740  2816 I RILC    : RIL_onRequestComplete: free RIL_Token 0x7f9363c140
+04-04 03:34:06.429  3354  3394 D RilRequest: [3653]< SIGNAL_STRENGTH error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+04-04 03:34:06.431  3354  3354 D SST     : notifyDataRegStateRilRadioTechnologyChanged: drs=1 rat=0
+04-04 03:34:06.431  3354  3354 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.network.type value: Unknown propVal=Unknown
+04-04 03:34:06.434  3354  3354 D TelephonyComponentFactory: makeDcTracker
+04-04 03:34:06.461  3354  3354 D DCT     : [0]DCT.constructor
+04-04 03:34:06.469  3045  3057 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+04-04 03:34:06.473  3354  3354 D Dcc     : E ctor
+04-04 03:34:06.474  3354  3354 D Dcc     : X ctor
+04-04 03:34:06.477  3354  3354 D SubscriptionController: [getPhoneId] asked for default subId=-1
+04-04 03:34:06.486  3354  3354 D DcTesterFailBrinupAll: register for intent action=com.android.internal.telephony.dataconnection.action_fail_bringup
+04-04 03:34:06.486  3354  3354 D DcTesterFailBrinupAll: register for intent action=com.android.internal.telephony.action_detached
+04-04 03:34:06.486  3354  3354 D DcTesterFailBrinupAll: register for intent action=com.android.internal.telephony.action_attached
+04-04 03:34:06.490  3354  3427 D DcTesterDeacativateAll: register for intent action=com.android.internal.telephony.dataconnection.action_deactivate_all
+04-04 03:34:06.490  3354  3427 D DcTesterDeacativateAll: register for intent action=com.android.internal.telephony.action_detached
+04-04 03:34:06.495  3354  3427 D Dcc     : DccDefaultState: msg.what=EVENT_RIL_CONNECTED mRilVersion=9
+04-04 03:34:06.495  3354  3354 D SST     : notifyDataRegStateRilRadioTechnologyChanged: drs=1 rat=0
+04-04 03:34:06.495  3354  3354 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.network.type value: Unknown propVal=Unknown
+04-04 03:34:06.496  3354  3354 D DCT     : [0]update sub = -2
+04-04 03:34:06.496  3354  3354 D DCT     : [0]update(): Active DDS, register for all events now!
+04-04 03:34:06.498  3354  3354 D GsmCdmaPhone: [GsmCdmaPhone] updateCurrentCarrierInProvider: mSubId = -2 currentDds = -1 operatorNumeric = null
+04-04 03:34:06.501  3354  3354 D DCT     : [0]initApnContexts: E
+04-04 03:34:06.502  3354  3354 D DCT     : [0]initApnContexts: skipping unknown type=1
+04-04 03:34:06.507  3354  3354 D DCT     : [0]initApnContexts: apnContext={mApnType=default mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}
+04-04 03:34:06.507  3354  3354 D DCT     : [0]initApnContexts: apnContext={mApnType=mms mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}
+04-04 03:34:06.508  3354  3354 D DCT     : [0]initApnContexts: apnContext={mApnType=supl mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}
+04-04 03:34:06.508  3354  3354 D DCT     : [0]initApnContexts: apnContext={mApnType=dun mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}
+04-04 03:34:06.508  3354  3354 D DCT     : [0]initApnContexts: apnContext={mApnType=hipri mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}
+04-04 03:34:06.509  3354  3354 D DCT     : [0]initApnContexts: apnContext={mApnType=fota mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}
+04-04 03:34:06.509  3354  3354 D DCT     : [0]initApnContexts: apnContext={mApnType=ims mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}
+04-04 03:34:06.510  3354  3354 D DCT     : [0]initApnContexts: apnContext={mApnType=cbs mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}
+04-04 03:34:06.510  3354  3354 D DCT     : [0]initApnContexts: apnContext={mApnType=ia mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}
+04-04 03:34:06.510  3354  3354 D DCT     : [0]initApnContexts: skipping unknown type=7
+04-04 03:34:06.548  3045  3045 D TelephonyRegistry: notifyCellLocationForSubscriber: subId=0 cellLocation=Bundle[{cid=-1, lac=-1, psc=-1}]
+04-04 03:34:06.550  3354  3367 D SubscriptionController: [getPhoneId]- no sims, returning default phoneId=2147483647
+04-04 03:34:06.571  3354  3354 D GsmCdmaPhone: [GsmCdmaPhone] GsmCdmaPhone: constructor: sub = 0
+04-04 03:34:06.572  3354  3354 I PhoneFactory: Creating Phone with type = 1 sub = 0
+04-04 03:34:06.583  3354  3354 I PhoneFactory: defaultSmsApplication: NONE
+04-04 03:34:06.590  3354  3354 I PhoneFactory: Creating SubInfoRecordUpdater 
+04-04 03:34:06.590  3354  3354 D TelephonyComponentFactory: makeSubscriptionInfoUpdater
+04-04 03:34:06.596  3354  3354 D SubscriptionInfoUpdater: Constructor invoked
+04-04 03:34:06.731  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 9.
+04-04 03:34:06.731  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 9.
+04-04 03:34:06.735  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 9.
+04-04 03:34:06.747  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 9.
+04-04 03:34:06.757  3354  3354 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+04-04 03:34:06.759  3354  3354 D SubscriptionController: [getActiveSubInfoForSubscriber]- subId=-2 subList=null subInfo=null
+04-04 03:34:06.759  3354  3354 E SubscriptionController: getUserNwMode: invalid subId = -2
+04-04 03:34:06.763  3045  3165 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+04-04 03:34:06.765  3354  3354 D TelephonyComponentFactory: makePhoneSwitcher
+04-04 03:34:06.769  3045  3164 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+04-04 03:34:06.775  3354  3354 D PhoneSwitcher: PhoneSwitcher started
+04-04 03:34:06.781  3354  3354 D ProxyController: Constructor - Enter
+04-04 03:34:06.799  3354  3354 D ProxyController: clearTransaction
+04-04 03:34:06.800  3354  3354 D ProxyController: clearTransaction: phoneId=0 status=IDLE
+04-04 03:34:06.800  3354  3354 D ProxyController: Constructor - Exit
+04-04 03:34:06.802  3354  3354 D TelephonyNetworkFactory[0]: Registering NetworkFactory
+04-04 03:34:06.803  3354  3354 D TelephonyComponentFactory: makeExtTelephonyClasses
+04-04 03:34:06.810  3354  3354 D CallManager: registerPhone(GSM Handler (com.android.internal.telephony.GsmCdmaPhone) {7d382d2})
+04-04 03:34:06.811  3354  3354 D RILJ    : [3654]> SET_SUPP_SVC_NOTIFICATION [SUB0]
+04-04 03:34:06.814  2740  2816 D use-Rlog/RLOG-RIL_GU: [modem_0]onRequest[62]:<unknown request>[1]
+04-04 03:34:06.814  2740  2816 D use-Rlog/RLOG-RIL_GU: [modem_0]onRequest: <unknown request> failed, sState= 1
+04-04 03:34:06.814  2740  2816 I RILC    : RIL_onRequestComplete: free RIL_Token 0x7f9363c140
+04-04 03:34:06.815  3354  3394 D RilRequest: [3654]< SET_SUPP_SVC_NOTIFICATION error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+04-04 03:34:06.821  3045  3316 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+04-04 03:34:06.855  3045  3316 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+04-04 03:34:06.905  3354  3354 D RILJ    : [3655]> RIL_REQUEST_SET_TTY_MODE : 0 [SUB0]
+04-04 03:34:06.908  2740  2816 D use-Rlog/RLOG-RIL_GU: [modem_0]onRequest[80]:SET_TTY_MODE[0]
+04-04 03:34:06.908  2740  2816 D use-Rlog/RLOG-RIL_GU: [modem_0]onRequest: SET_TTY_MODE failed, sState= 1
+04-04 03:34:06.908  2740  2816 I RILC    : RIL_onRequestComplete: free RIL_Token 0x7f9363c140
+04-04 03:34:06.909  3354  3394 D RilRequest: [3655]< RIL_REQUEST_SET_TTY_MODE error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+04-04 03:34:06.917  3045  3165 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+04-04 03:34:06.918  3354  3354 D SubscriptionController: [getPhoneId] asked for default subId=-1
+04-04 03:34:06.923  3354  3354 D UiccController: EVENT_RADIO_UNAVAILABLE, dispose card
+04-04 03:34:06.924  3354  3354 D Phone   : config LCE service failed: com.android.internal.telephony.CommandException: REQUEST_NOT_SUPPORTED
+04-04 03:34:06.924  3354  3354 D RILJ    : [3656]> GET_CURRENT_CALLS [SUB0]
+04-04 03:34:06.926  3354  3354 D GsmSMSDispatcher: GsmSMSDispatcher: subId = -2 slotId = 0
+04-04 03:34:06.927  2740  2816 D use-Rlog/RLOG-RIL_GU: [modem_0]onRequest: GET_CURRENT_CALLS
+04-04 03:34:06.927  2740  2816 D use-Rlog/RLOG-RIL_GU: [modem_0]onRequest: GET_CURRENT_CALLS failed, sState= 1
+04-04 03:34:06.927  2740  2816 I RILC    : RIL_onRequestComplete: free RIL_Token 0x7f9363c140
+04-04 03:34:06.927  3354  3354 E IccCardProxy: setExternalState: !override and newstate unchanged from NOT_READY
+04-04 03:34:06.927  3354  3394 D RilRequest: [3656]< GET_CURRENT_CALLS error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+04-04 03:34:06.927  3354  3354 E IccCardProxy: setExternalState: !override and newstate unchanged from NOT_READY
+04-04 03:34:06.927  3354  3354 D GsmCdmaPhone: [GsmCdmaPhone] Event EVENT_RADIO_OFF_OR_NOT_AVAILABLE Received
+04-04 03:34:06.928  3354  3354 E IccCardProxy: setExternalState: !override and newstate unchanged from NOT_READY
+04-04 03:34:06.928  3354  3354 D SST     : mDeviceShuttingDown=false, mDesiredPowerState=true, getRadioState=RADIO_UNAVAILABLE, mPowerOffDelayNeed=true, mAlarmSwitch=false, mRadioDisabledByCarrier=false
+04-04 03:34:06.930  3354  3354 D SST     : Poll ServiceState done:  oldSS=[1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported 0 0 RoamInd=0 DefRoamInd=0 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] newSS=[1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] oldMaxDataCalls=1 mNewMaxDataCalls=1 oldReasonDataDenied=-1 mNewReasonDataDenied=-1
+04-04 03:34:06.931  3354  3354 D SST     : updateSpnDisplay: radio is on but out of service, set plmn='No service'
+04-04 03:34:06.932  3354  3354 D SST     : updateSpnDisplay: changed sending intent rule=0 showPlmn='true' plmn='No service' showSpn='false' spn='' dataSpn='' subId='-2'
+04-04 03:34:06.937  3354  3354 D SubscriptionController: [setPlmnSpn] No valid subscription to store info
+04-04 03:34:06.938  3354  3354 D SubscriptionController: notifySubscriptionInfoChanged:
+04-04 03:34:06.938  3045  3316 D TelephonyRegistry: notifySubscriptionInfoChanged: first invocation mRecords.size=14
+04-04 03:34:06.942  3354  3368 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+04-04 03:34:06.943  3354  3354 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.operator.alpha value:  propVal=
+04-04 03:34:06.944  3354  3354 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.operator.numeric value:  propVal=
+04-04 03:34:06.944  3354  3354 D SST     : operatorNumeric is null
+04-04 03:34:06.945  3354  3354 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.operator.iso-country value:  propVal=
+04-04 03:34:06.945  3354  3354 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.operator.isroaming value: false propVal=false
+04-04 03:34:06.945  3354  3354 D SST     : Broadcasting ServiceState : 1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false
+04-04 03:34:06.946  3354  3354 D DefaultPhoneNotifier: nofityServiceState: mRegistry=com.android.internal.telephony.ITelephonyRegistry$Stub$Proxy@8d6a01b ss=1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false sender=Handler (com.android.internal.telephony.GsmCdmaPhone) {7d382d2} phondId=0 subId=-2
+04-04 03:34:06.949  3354  3354 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:34:06.950  3045  3165 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:34:06.962  3354  3354 D SST     : mDeviceShuttingDown=false, mDesiredPowerState=true, getRadioState=RADIO_UNAVAILABLE, mPowerOffDelayNeed=true, mAlarmSwitch=false, mRadioDisabledByCarrier=false
+04-04 03:34:06.965  3354  3354 D SST     : Poll ServiceState done:  oldSS=[1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] newSS=[1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false IsUsingCarrierAggregation=false] oldMaxDataCalls=1 mNewMaxDataCalls=1 oldReasonDataDenied=-1 mNewReasonDataDenied=-1
+04-04 03:34:06.967  3354  3354 D DCT     : [0]onRadioOffOrNotAvailable: is off and clean up all connections
+04-04 03:34:06.967  3354  3354 D DCT     : [0]cleanUpAllConnections: tearDown=false reason=radioTurnedOff
+04-04 03:34:06.968  3354  3354 D GsmCdmaPhone: [GsmCdmaPhone] getDataConnectionState apnType=default ret=DISCONNECTED
+04-04 03:34:06.969  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:06.982  3354  3354 D DCT     : [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+04-04 03:34:06.982  3354  3354 D DCT     : [0]isOnlySingleDcAllowed(0): false
+04-04 03:34:06.982  3354  3354 D DCT     : [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=default mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+04-04 03:34:06.982  3354  3354 D GsmCdmaPhone: [GsmCdmaPhone] getDataConnectionState apnType=mms ret=DISCONNECTED
+04-04 03:34:06.983  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:06.989  3354  3354 D DCT     : [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+04-04 03:34:06.989  3354  3354 D DCT     : [0]isOnlySingleDcAllowed(0): false
+04-04 03:34:06.989  3354  3354 D DCT     : [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=mms mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+04-04 03:34:06.989  3354  3354 D GsmCdmaPhone: [GsmCdmaPhone] getDataConnectionState apnType=cbs ret=DISCONNECTED
+04-04 03:34:06.990  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:06.997  3354  3354 D DCT     : [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+04-04 03:34:06.997  3354  3354 D DCT     : [0]isOnlySingleDcAllowed(0): false
+04-04 03:34:06.997  3354  3354 D DCT     : [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=cbs mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+04-04 03:34:06.997  3354  3354 D GsmCdmaPhone: [GsmCdmaPhone] getDataConnectionState apnType=fota ret=DISCONNECTED
+04-04 03:34:06.998  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.005  3354  3354 D DCT     : [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+04-04 03:34:07.005  3354  3354 D DCT     : [0]isOnlySingleDcAllowed(0): false
+04-04 03:34:07.005  3354  3354 D DCT     : [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=fota mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+04-04 03:34:07.005  3354  3354 D GsmCdmaPhone: [GsmCdmaPhone] getDataConnectionState apnType=supl ret=DISCONNECTED
+04-04 03:34:07.006  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.011  3354  3354 D DCT     : [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+04-04 03:34:07.012  3354  3354 D DCT     : [0]isOnlySingleDcAllowed(0): false
+04-04 03:34:07.012  3354  3354 D DCT     : [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=supl mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+04-04 03:34:07.012  3354  3354 D GsmCdmaPhone: [GsmCdmaPhone] getDataConnectionState apnType=ia ret=DISCONNECTED
+04-04 03:34:07.013  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.021  3354  3354 D DCT     : [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+04-04 03:34:07.021  3354  3354 D DCT     : [0]isOnlySingleDcAllowed(0): false
+04-04 03:34:07.021  3354  3354 D DCT     : [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=ia mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+04-04 03:34:07.022  3354  3354 D GsmCdmaPhone: [GsmCdmaPhone] getDataConnectionState apnType=dun ret=DISCONNECTED
+04-04 03:34:07.022  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.028  3354  3354 D DCT     : [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+04-04 03:34:07.028  3354  3354 D DCT     : [0]isOnlySingleDcAllowed(0): false
+04-04 03:34:07.028  3354  3354 D DCT     : [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=dun mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+04-04 03:34:07.028  3354  3354 D GsmCdmaPhone: [GsmCdmaPhone] getDataConnectionState apnType=hipri ret=DISCONNECTED
+04-04 03:34:07.029  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.035  3354  3354 D DCT     : [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+04-04 03:34:07.035  3354  3354 D DCT     : [0]isOnlySingleDcAllowed(0): false
+04-04 03:34:07.036  3354  3354 D DCT     : [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=hipri mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+04-04 03:34:07.036  3354  3354 D GsmCdmaPhone: [GsmCdmaPhone] getDataConnectionState apnType=ims ret=DISCONNECTED
+04-04 03:34:07.037  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.046  3354  3354 D DCT     : [0]setupDataForSinglePdn: reason = radioTurnedOff isDisconnected = true
+04-04 03:34:07.046  3354  3354 D DCT     : [0]isOnlySingleDcAllowed(0): false
+04-04 03:34:07.046  3354  3354 D DCT     : [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=ims mState=IDLE mWaitingApns={null} mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+04-04 03:34:07.046  3354  3354 D DCT     : [0]stopNetStatPoll
+04-04 03:34:07.048  3354  3354 D DCT     : [0]cleanUpConnection: mDisconnectPendingCount = 0
+04-04 03:34:07.048  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.050  3354  3354 D DCT     : [0]isDataAllowed: No - SIM not loaded - Not attached - defaultDataSelected= false
+04-04 03:34:07.050  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.058  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.065  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.070  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.077  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.084  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.089  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.095  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.101  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.107  3354  3354 D DCT     : [0]onDataConnectionDetached: stop polling and notify detached
+04-04 03:34:07.107  3354  3354 D DCT     : [0]stopNetStatPoll
+04-04 03:34:07.108  3354  3354 D DCT     : [0]notifyDataConnection: reason=dataDetached
+04-04 03:34:07.109  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.110  3354  3354 D DCT     : [0]isDataAllowed: No - SIM not loaded - Not attached - defaultDataSelected= false
+04-04 03:34:07.110  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.117  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.125  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.131  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.137  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.144  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.149  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.156  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.163  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.169  3354  3354 D DCT     : [0]onRoamingOff
+04-04 03:34:07.169  3354  3354 D DCT     : [0]setDataProfilesAsNeeded mSetDataProfileStatus: 0
+04-04 03:34:07.171  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.172  3354  3354 D DCT     : [0]isDataAllowed: No - SIM not loaded - Not attached - defaultDataSelected= false
+04-04 03:34:07.173  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.182  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.188  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.198  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.205  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.214  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.221  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.229  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.236  3354  3354 D CdmaSSM : subscriptionSource from settings: 0
+04-04 03:34:07.243  3354  3354 D DCT     : [0]setupDataOnConnectableApns: roamingOff hipri:[state=IDLE,enabled=false] mms:[state=IDLE,enabled=false] supl:[state=IDLE,enabled=false] cbs:[state=IDLE,enabled=false] dun:[state=IDLE,enabled=false] fota:[state=IDLE,enabled=false] ims:[state=IDLE,enabled=false] default:[state=IDLE,enabled=false] ia:[state=IDLE,enabled=false] 
+04-04 03:34:07.244  3354  3354 D DCT     : [0]setupDataOnConnectableApns: nwTypeChanged hipri:[state=IDLE,enabled=false] mms:[state=IDLE,enabled=false] supl:[state=IDLE,enabled=false] cbs:[state=IDLE,enabled=false] dun:[state=IDLE,enabled=false] fota:[state=IDLE,enabled=false] ims:[state=IDLE,enabled=false] default:[state=IDLE,enabled=false] ia:[state=IDLE,enabled=false] 
+04-04 03:34:07.244  3354  3354 D SubscriptionInfoUpdater: [Receiver]+
+04-04 03:34:07.244  3354  3354 D SubscriptionInfoUpdater: Action: android.intent.action.SIM_STATE_CHANGED
+04-04 03:34:07.244  3354  3354 D SubscriptionInfoUpdater: slotId: 0
+04-04 03:34:07.244  3354  3354 D SubscriptionInfoUpdater: simStatus: NOT_READY
+04-04 03:34:07.245  3354  3354 D SubscriptionInfoUpdater: Ignoring simStatus: NOT_READY
+04-04 03:34:07.245  3354  3354 D SubscriptionInfoUpdater: [Receiver]-
+04-04 03:34:07.250  3354  3354 D TelephonyNetworkFactory[0]: onSubIdChange -1->-2
+04-04 03:34:07.251  3354  3354 D TelephonyNetworkFactory[0]: got request NetworkRequest [ REQUEST id=1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ] with score 0
+04-04 03:34:07.252  3354  3354 D DebugService: DebugService DebugService:
+04-04 03:34:07.257  3354  3354 D RILJ    : [3657]> RIL_REQUEST_QUERY_TTY_MODE [SUB0]
+04-04 03:34:07.260  3354  3354 D GsmSMSDispatcher: GsmSMSDispatcher: subId = -2 slotId = 0
+04-04 03:34:07.260  2740  2816 D use-Rlog/RLOG-RIL_GU: [modem_0]onRequest: QUERY_TTY_MODE
+04-04 03:34:07.260  2740  2816 D use-Rlog/RLOG-RIL_GU: [modem_0]onRequest: QUERY_TTY_MODE failed, sState= 1
+04-04 03:34:07.260  2740  2816 I RILC    : RIL_onRequestComplete: free RIL_Token 0x7f9363c140
+04-04 03:34:07.261  3354  3354 E IccCardProxy: setExternalState: !override and newstate unchanged from NOT_READY
+04-04 03:34:07.261  3354  3394 D RilRequest: [3657]< RIL_REQUEST_QUERY_TTY_MODE error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+04-04 03:34:07.261  3354  3354 D GsmCdmaCallTracker: Event EVENT_POLL_CALLS_RESULT Received
+04-04 03:34:07.261  3354  3354 D GsmCdmaCallTracker: [GsmCdmaCallTracker] update phone state, old=IDLE new=IDLE
+04-04 03:34:07.262  3354  3354 D SST     : SubscriptionListener.onSubscriptionInfoChanged
+04-04 03:34:07.262  3354  3354 D GsmCdmaPhone: [GsmCdmaPhone] updateVoiceMail countVoiceMessages = 0 subId -2
+04-04 03:34:07.262  3354  3354 E Phone   : setVoiceMessageCount in sharedPreference: invalid subId -2
+04-04 03:34:07.263  3354  3354 D DCT     : [0]SubscriptionListener.onSubscriptionInfoChanged
+04-04 03:34:07.265  3354  3354 D PhoneSwitcher: evaluating due to subChanged default 0->-1 phone[0] 0->-2
+04-04 03:34:07.268  3354  3354 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+04-04 03:34:07.277  3354  3354 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+04-04 03:34:07.300  3354  3449 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+04-04 03:34:07.306  3354  3368 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+04-04 03:34:07.311  3354  3367 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+04-04 03:34:07.378  3354  3354 D PhoneSwitcher: evaluating due to netRequest
+04-04 03:34:07.383  3354  3354 D TelephonyNetworkFactory[0]: not acting - isApp=false, isAct=false NetworkRequest [ REQUEST id=1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+04-04 03:34:07.437  3354  3449 D SubscriptionController: [getPhoneId] asked for default subId=-1
+04-04 03:34:07.603  3354  3367 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:34:07.605  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:34:07.639  3354  3368 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:34:07.640  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:34:07.665  3354  3368 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:34:07.666  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:34:07.732  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 8.
+04-04 03:34:07.732  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 8.
+04-04 03:34:07.735  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 8.
+04-04 03:34:07.747  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 8.
+04-04 03:34:08.359  3354  3367 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:34:08.370  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:34:08.590  3354  3367 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:34:08.596  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:34:08.605  3354  3367 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:34:08.615  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:34:08.628  3354  3367 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:34:08.632  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:34:08.732  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 7.
+04-04 03:34:08.732  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 7.
+04-04 03:34:08.735  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 7.
+04-04 03:34:08.736  3354  3367 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:34:08.747  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 7.
+04-04 03:34:08.749  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:34:09.235  3354  3367 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:34:09.240  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:34:09.298  3354  3420 D GsmCellBroadcastHandler: mWakeLock released
+04-04 03:34:09.319  3354  3422 D CellBroadcastHandler: mWakeLock released
+04-04 03:34:09.330  3354  3426 D CdmaServiceCategoryProgramHandler: mWakeLock released
+04-04 03:34:09.580  3354  3449 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:34:09.619  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:34:09.732  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 6.
+04-04 03:34:09.732  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 6.
+04-04 03:34:09.736  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 6.
+04-04 03:34:09.747  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 6.
+04-04 03:34:09.774  3354  3449 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:34:09.783  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:34:09.810  3354  3449 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:34:09.823  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:34:09.848  3354  3449 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:34:09.859  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:34:09.909  3354  3449 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:34:09.923  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:34:09.947  3354  3449 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:34:09.959  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:34:09.975  3354  3449 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:34:09.990  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:34:10.494  3354  3368 D DCT     : [0]fetchDunApn: net.tethering.noprovisioning=true ret: null
+04-04 03:34:10.494  3354  3368 D DCT     : [0]hasMatchedTetherApnSetting: APN=null
+04-04 03:34:10.732  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 5.
+04-04 03:34:10.732  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 5.
+04-04 03:34:10.736  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 5.
+04-04 03:34:10.748  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 5.
+04-04 03:34:10.766  3354  3367 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+04-04 03:34:11.733  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 4.
+04-04 03:34:11.733  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 4.
+04-04 03:34:11.736  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 4.
+04-04 03:34:11.748  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 4.
+04-04 03:34:12.733  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 3.
+04-04 03:34:12.733  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 3.
+04-04 03:34:12.736  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 3.
+04-04 03:34:12.748  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 3.
+04-04 03:34:13.733  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 2.
+04-04 03:34:13.733  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 2.
+04-04 03:34:13.736  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 2.
+04-04 03:34:13.749  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 2.
+04-04 03:34:14.733  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 1.
+04-04 03:34:14.733  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 1.
+04-04 03:34:14.736  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 1.
+04-04 03:34:14.749  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 1.
+04-04 03:34:14.772  3354  3354 D WAP PUSH: Received broadcast android.intent.action.USER_UNLOCKED
+04-04 03:34:14.773  3354  3354 D WAP PUSH: Received broadcast android.intent.action.USER_UNLOCKED
+04-04 03:34:14.774  3354  3354 D SmsBroadcastUndelivered: Received broadcast android.intent.action.USER_UNLOCKED
+04-04 03:34:14.774  3354  3354 D SubscriptionInfoUpdater: [Receiver]+
+04-04 03:34:14.774  3354  3354 D SubscriptionInfoUpdater: Action: android.intent.action.USER_UNLOCKED
+04-04 03:34:14.775  3354  3354 D SubscriptionInfoUpdater: Broadcasting intent ACTION_SIM_STATE_CHANGED for mCardIndex: 0
+04-04 03:34:14.778  3354  3587 D SmsBroadcastUndelivered: scanning raw table for undelivered messages
+04-04 03:34:14.813  3354  3354 D SubscriptionInfoUpdater: [Receiver]-
+04-04 03:34:14.874  3354  3354 D SubscriptionInfoUpdater: [Receiver]+
+04-04 03:34:14.874  3354  3354 D SubscriptionInfoUpdater: Action: android.intent.action.SIM_STATE_CHANGED
+04-04 03:34:14.874  3354  3354 D SubscriptionInfoUpdater: slotId: 0
+04-04 03:34:14.874  3354  3354 D SubscriptionInfoUpdater: simStatus: NOT_READY
+04-04 03:34:14.874  3354  3354 D SubscriptionInfoUpdater: Ignoring simStatus: NOT_READY
+04-04 03:34:14.874  3354  3354 D SubscriptionInfoUpdater: [Receiver]-
+04-04 03:34:14.877  3354  3449 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+04-04 03:34:14.884  3354  3587 D SmsBroadcastUndelivered: finished scanning raw table in 105 ms
+04-04 03:34:15.734  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] open[/dev/appvcom1] ret -1, openTryCount 0.
+04-04 03:34:15.734  2740  2841 I use-Rlog/RLOG-RIL_GU: cmdloop[1] Wait AT port timeout, reset!!!
+04-04 03:34:15.734  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] open[/dev/appvcom] ret -1, openTryCount 0.
+04-04 03:34:15.734  2740  2840 I use-Rlog/RLOG-RIL_GU: cmdloop[0] Wait AT port timeout, reset!!!
+04-04 03:34:15.737  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] open[/dev/appvcom10] ret -1, openTryCount 0.
+04-04 03:34:15.737  2740  2842 I use-Rlog/RLOG-RIL_GU: cmdloop[2] Wait AT port timeout, reset!!!
+04-04 03:34:15.749  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] open[/dev/appvcom13] ret -1, openTryCount 0.
+04-04 03:34:15.749  2740  2843 I use-Rlog/RLOG-RIL_GU: cmdloop[3] Wait AT port timeout, reset!!!
+04-04 03:34:16.390  3354  3354 D SubscriptionController: [getPhoneId] asked for default subId=-1
+04-04 03:34:16.609  3354  3354 D GsmCdmaPhone: mBroadcastReceiver: action android.telephony.action.CARRIER_CONFIG_CHANGED
+04-04 03:34:16.628  3354  3354 I CSST    : reading time to delay notification: -1
+04-04 03:34:16.637  3354  3354 D ImsManager: updateVolteFeatureValue: available = false, enabled = true, nonTTY = true
+04-04 03:34:16.643  3354  3354 E ImsManager: updateImsServiceConfig: 
+04-04 03:34:16.643  3354  3354 E ImsManager: com.android.ims.ImsException: Service is unavailable, code = 106
+04-04 03:34:16.643  3354  3354 E ImsManager: 	at com.android.ims.ImsManager.checkAndThrowExceptionIfServiceUnavailable(ImsManager.java:1359)
+04-04 03:34:16.643  3354  3354 E ImsManager: 	at com.android.ims.ImsManager.getConfigInterface(ImsManager.java:1238)
+04-04 03:34:16.643  3354  3354 E ImsManager: 	at com.android.ims.ImsManager.updateVolteFeatureValue(ImsManager.java:817)
+04-04 03:34:16.643  3354  3354 E ImsManager: 	at com.android.ims.ImsManager.updateImsServiceConfig(ImsManager.java:777)
+04-04 03:34:16.643  3354  3354 E ImsManager: 	at com.android.internal.telephony.GsmCdmaPhone.handleMessage(GsmCdmaPhone.java:2166)
+04-04 03:34:16.643  3354  3354 E ImsManager: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-04 03:34:16.643  3354  3354 E ImsManager: 	at android.os.Looper.loop(Looper.java:154)
+04-04 03:34:16.643  3354  3354 E ImsManager: 	at android.app.ActivityThread.main(ActivityThread.java:6186)
+04-04 03:34:16.643  3354  3354 E ImsManager: 	at java.lang.reflect.Method.invoke(Native Method)
+04-04 03:34:16.643  3354  3354 E ImsManager: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:889)
+04-04 03:34:16.643  3354  3354 E ImsManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:779)
+04-04 03:34:16.650  3354  3354 D GsmCdmaPhone: [GsmCdmaPhone] broadcastEmergencyCallStateChanges = false
+04-04 03:34:16.652  3354  3354 E GsmCdmaPhone: [GsmCdmaPhone] Invalid cdma_roaming_mode settings: -1
+04-04 03:34:16.652  3354  3354 D EriManager: loadEriFileFromXml: check for alternate file
+04-04 03:34:16.653  3354  3354 D EriManager: loadEriFileFromXml: no alternate file
+04-04 03:34:16.656  3354  3354 D EriManager: eriFile = eri.xml
+04-04 03:34:16.669  3354  3354 D EriManager: loadEriFileFromXml: eri parsing successful, file loaded. ver = 1357, # of entries = 176
+04-04 03:34:16.669  3354  3354 D GsmCdmaPhone: [GsmCdmaPhone] ERI read, notify registrants
+04-04 03:34:25.379  3354  3354 D RILJ    : [3658]> SCREEN_STATE: true [SUB0]
+04-04 03:34:25.382  2740  2816 D use-Rlog/RLOG-RIL_GU: [modem_0]onRequest[61]:SCREEN_STATE[1]
+04-04 03:34:25.382  2740  2816 D use-Rlog/RLOG-RIL_GU: [modem_0]onRequest: SCREEN_STATE failed, sState= 1
+04-04 03:34:25.382  2740  2816 I RILC    : RIL_onRequestComplete: free RIL_Token 0x7f9363c140
+04-04 03:34:25.383  3354  3394 D RilRequest: [3658]< SCREEN_STATE error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+04-04 03:34:25.780  3354  3354 D DCT     : [0]screen on
+04-04 03:34:25.780  3354  3354 D DCT     : [0]stopNetStatPoll
+04-04 03:34:25.847  3354  3354 D DCT     : [0]screen off
+04-04 03:34:25.847  3354  3354 D DCT     : [0]stopNetStatPoll
+04-04 03:34:30.524  3354  3354 D DCT     : [0]Wifi state changed
+04-04 03:34:30.524  3354  3354 D DCT     : [0]WIFI_STATE_CHANGED_ACTION: enabled=false mIsWifiConnected=false
+04-04 03:34:46.120  3354  3368 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+04-04 03:34:46.124  3354  3449 D SubscriptionController: [getPhoneId] asked for default subId=-1
+04-04 03:34:46.140  3354  3368 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+04-04 03:34:46.149  3354  3367 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+04-04 03:34:46.159  3354  3449 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+04-04 03:34:46.205  3354  3449 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+04-04 03:34:46.284  3354  3354 D SipService: SipService: started!
+04-04 03:34:46.295  3354  3354 D SipService: start:
+04-04 03:34:46.518  3354  3368 D SubscriptionController: [getPhoneId] asked for default subId=-1
+04-04 03:34:46.590  3354  3354 D CAT     : com.android.stk.BootCompletedReceiver: [ACTION_BOOT_COMPLETED]
+04-04 03:34:46.616  3354  3354 D CAT     : com.android.stk.StkAppService: onCreate()+
+04-04 03:34:46.616  3354  3354 D CAT     : com.android.stk.StkAppService: simCount: 1
+04-04 03:34:46.623  3354  3354 D CAT     : com.android.stk.StkAppService: slotId: 0
+04-04 03:34:46.631  3354  3354 D CAT     : com.android.stk.StkAppService: onStart sim id: 0, op: 5, *****
+04-04 03:34:46.631  3354  3354 D CAT     : com.android.stk.StkAppService: mStkService is: -1
+04-04 03:34:46.637  3354  3354 D CAT     : StkAppInstaller: [setAppState]+
+04-04 03:34:46.638  3354  3354 D CAT     : StkAppInstaller: Need not change app state!!
+04-04 03:34:46.638  3354  3354 D CAT     : StkAppInstaller: [setAppState]-
+04-04 03:34:46.639  3354  3354 D CAT     : com.android.stk.StkAppService: onDestroy()
+04-04 03:35:16.384  3354  3354 D DCT     : [0]screen on
+04-04 03:35:16.384  3354  3354 D DCT     : [0]stopNetStatPoll
+04-04 03:35:27.236  3354  3354 D DCT     : [0]screen off
+04-04 03:35:27.236  3354  3354 D DCT     : [0]stopNetStatPoll
+04-04 03:36:51.030  3354  3354 D DCT     : [0]screen on
+04-04 03:36:51.031  3354  3354 D DCT     : [0]stopNetStatPoll
+04-04 03:36:51.759  3354  3367 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:36:51.761  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:36:53.391  3354  3367 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:36:53.400  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:36:53.957  3354  3368 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:36:53.987  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:36:54.348  3354  3368 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:36:54.387  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:36:54.428  3354  3368 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:36:54.447  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:36:54.484  3354  3368 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:36:54.507  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:37:42.618  3354  3354 D RILJ    : [3659]> RIL_REQUEST_GET_ACTIVITY_INFO [SUB0]
+04-04 03:37:42.618  3354  3354 I RILJ-HwHisiRil: : Unsupported request 135
+04-04 03:37:42.618  3354  3354 D RilRequest: [3659]< RIL_REQUEST_GET_ACTIVITY_INFO error: com.android.internal.telephony.CommandException: REQUEST_NOT_SUPPORTED ret=
+04-04 03:37:58.111  3354  3354 D DCT     : [0]screen off
+04-04 03:37:58.111  3354  3354 D DCT     : [0]stopNetStatPoll
+04-04 03:38:02.442  3354  3368 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:38:02.444  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:38:02.525  3354  3368 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:38:02.534  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:38:02.558  3354  3368 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:38:02.565  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:38:02.580  3354  3368 D SubscriptionController: [getSlotId]- subId invalid
+04-04 03:38:02.597  3149  3471 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+04-04 03:41:23.324  3354  3354 D RILJ    : [3660]> RIL_REQUEST_GET_ACTIVITY_INFO [SUB0]
+04-04 03:41:23.324  3354  3354 I RILJ-HwHisiRil: : Unsupported request 135
+04-04 03:41:23.324  3354  3354 D RilRequest: [3660]< RIL_REQUEST_GET_ACTIVITY_INFO error: com.android.internal.telephony.CommandException: REQUEST_NOT_SUPPORTED ret=
