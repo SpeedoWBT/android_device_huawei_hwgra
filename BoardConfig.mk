@@ -97,7 +97,7 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 BOARD_WLAN_DEVICE := bcmdhd
 BOARD_WLAN_DEVICE_REV := bcm4334
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
-BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_bcmdhd
 BOARD_HOSTAPD_DRIVER := NL80211
 BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
 WIFI_DRIVER_NVRAM_PATH := "/vendor/firmware/nvram4334_hw.txt"
@@ -113,6 +113,9 @@ BOARD_NO_APSME_ATTR := true
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_CUSTOM_BT_CONFIG := $(LOCAL_PATH)/bluetooth/vnd_hwgra.conf
+
+TARGET_USES_64_BIT_BCMDHD := true
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_bcmdhd
 
 # CPU/ARCH
 TARGET_ARCH := arm64
@@ -194,21 +197,6 @@ TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 
 # TAP TO WAKE
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchscreen/wakeup_gesture_enable"
-
-# RIL
-PRODUCT_PROPERTY_OVERRIDES += \
-	rild.libargs=-m modem0 \
-	rild.libpath=/system/lib64/libbalong-ril.so \
-	audioril.lib=libhuawei-audio-ril.so \
-	persist.radio.apm_sim_not_pwdn=1 \
-	ro.config.hw_lte_support=true \
-	ro.config.hw_show_4G_Plus_icon=true \
-	ro.config.hw_show_network_icon=true \
-	ro.telephony.default_network=9 \
-	ro.telephony.ril.config=simactivation \
-	telephony.lteOnCdmaDevice=0 \
-	telephony.lteOnGsmDevice=1 \
-
 
 # inherit from the proprietary version
 -include vendor/huawei/hwgra/BoardConfigVendor.mk

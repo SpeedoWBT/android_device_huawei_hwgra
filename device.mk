@@ -238,6 +238,25 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 	persist.logd.logpersistd=logcatd \
 	sys.init_log_level=3
 
+# RIL
+#PRODUCT_PROPERTY_OVERRIDES += \
+#	rild.libargs=-m modem0 \
+#	rild.libargs1=-m modem1 \
+#	rild.libpath=/system/lib64/libbalong-ril.so \
+#	audioril.lib=libhuawei-audio-ril.so \
+#	persist.radio.apm_sim_not_pwdn=1 \
+#	ro.config.hw_lte_support=true \
+#	ro.config.hw_show_4G_Plus_icon=true \
+#	ro.config.hw_show_network_icon=true \
+#	ro.telephony.default_network=9 \
+#	ro.telephony.ril.config=simactivation \
+#	telephony.lteOnCdmaDevice=0 \
+#	telephony.lteOnGsmDevice=1 \
+#	ro.config.hw_device_mode=clg_mode \
+#	ro.config.full_network_support=true \
+#	persist.dsds.enabled=true \
+#	ro.config.dsds_mode=umts
+
 # DALVIK AND MEMORY
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
