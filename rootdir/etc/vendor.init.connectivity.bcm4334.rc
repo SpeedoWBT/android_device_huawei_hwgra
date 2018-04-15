@@ -14,13 +14,17 @@ on post-fs-data
     chown wifi wifi /data/misc/wifi
     mkdir /data/misc/wifi/sockets 0770 wifi wifi
     chown wifi wifi /data/misc/wifi/p2p_supplicant.conf
+    chown wifi wifi /data/misc/wifi/wpa_supplicant.conf
     chmod 0660 /data/misc/wifi/p2p_supplicant.conf
+    chmod 0660 /data/misc/wifi/wpa_supplicant.conf
     mkdir /data/misc/dhcp 0770 dhcp dhcp
     chown dhcp dhcp /data/misc/dhcp
 
+    restorecon_recursive /data/misc/wifi
+
 on early-boot
 on property:bluetooth.log.file.create=true
-   mkdir /data/hwzd_logs/bt
+   mkdir /data/hwzd_logs/bt 775 bluetooth net_bt_stack
    chown bluetooth net_bt_stack /data/hwzd_logs/bt
    chmod 775 /data/hwzd_logs/bt
 
@@ -52,10 +56,11 @@ on boot
 
 
 service macaddr /system/bin/mac_addr_normalization
-    class core
+    class late_start
     user root
     group root bluetooth net_bt_stack wifi
     oneshot
+    writepid /dev/cpuset/system-background/tasks
 
 
 #service wifi_wakeup_src /system/bin/wifiwakeupsrc
@@ -103,20 +108,20 @@ service dhcpcd_bnep0 /system/bin/dhcpcd -ABKL
     disabled
     oneshot
 
-service dhcpcd_bt-pan /system/bin/dhcpcd -ABKL
+service agnsslog /system/bin/agnsslog
     class main
+    user system
+    group system inet root wakelock
     disabled
     oneshot
 
-service iprenew_wlan0 /system/bin/dhcpcd -n
+service watchlssd /system/xbin/gnss_watchlssd_thirdparty
     class main
+    user system
+    group system inet net_raw
     disabled
-    oneshot
 
-service iprenew_p2p /system/bin/dhcpcd -n
-    class main
-    disabled
-    oneshot
+
 
 service iprenew_bnep0 /system/bin/dhcpcd -n
     class main

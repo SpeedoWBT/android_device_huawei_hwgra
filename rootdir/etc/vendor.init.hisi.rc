@@ -82,6 +82,9 @@ on early-boot
 on boot
     write /sys/kernel/debug/kmemleak scan=14400
 
+    # experiment
+    start ril-daemon
+
 service atcserver /system/bin/atc
     class main
     disabled
@@ -118,9 +121,6 @@ on property:rild.rild1_ready_to_start=true
 
 on property:rild.rild1_ready_to_start=false
     symlink /dev/socket/rildm2 /dev/socket/rild2
-
-on property:ro.hardware.alter=*
-    write /proc/sys/kernel/hardware_alter ${ro.hardware.alter}
 
 service fingerprintd /system/bin/fingerprintd
     class late_start

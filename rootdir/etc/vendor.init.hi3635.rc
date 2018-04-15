@@ -188,12 +188,12 @@ on charger
     write /sys/devices/virtual/graphics/fb0/mode "U:1080x1920p-0"
     start charger_huawei
     start oeminfo_nvm
-#    start hw_ueventd
+    start hw_ueventd
 
 on fs
     #export LD_SHIM_LIBS "/system/bin/rild|system/lib64/libshim_icu.so:/system/lib/libril.so|system/lib/libshim_icu.so:/system/lib64/libril.so|system/lib64/libshim_icu.so:/system/lib/hw/audio.primary.hi3635.so|system/lib/libshim_icu.so:/system/lib64/hw/audio.primary.hi3635.so|system/lib64/libshim_icu.so:/system/lib/hw/camera.hi3635.so|system/lib/libshim_camera.so:/system/lib64/hw/camera.hi3635.so|system/lib64/libshim_camera.so:/system/bin/recovery-persist|system/lib64/libhw_log.so"
 
-    export LD_SHIM_LIBS "/system/bin/logserver|libshim_log.so:/system/lib/libril.so|system/lib/libshim_icu.so:/system/lib64/libril.so|system/lib64/libshim_icu.so:/system/lib/hw/audio.primary.hi3635.so|system/lib/libshim_icu.so:/system/lib64/hw/audio.primary.hi3635.so|system/lib64/libshim_icu.so:/system/lib/hw/camera.hi3635.so|system/lib/libshim_camera.so:/system/lib64/hw/camera.hi3635.so|system/lib64/libshim_camera.so:/system/lib/libhuaweiprocessing.so|libshim_icu.so:/system/lib/libcamera_core.so|libshim_gui.so:/system/lib/libcamera_core.so|libshim_camera.so:/system/lib/libsensorsgps.so|libshim_gui.so:/system/vendor/lib/libwvm.so|libshim_wvm.so":/system/lib/libFNVfbEngineLib.so|libshim_gui.so:
+    export LD_SHIM_LIBS "/system/bin/logserver|libshim_log.so:/system/lib/libril.so|system/lib/libshim_icu.so:/system/lib64/libril.so|system/lib64/libshim_icu.so:/system/lib/hw/audio.primary.hi3635.so|system/lib/libshim_icu.so:/system/lib64/hw/audio.primary.hi3635.so|system/lib64/libshim_icu.so:/system/lib/hw/camera.hi3635.so|system/lib/libshim_camera.so:/system/lib64/hw/camera.hi3635.so|system/lib64/libshim_camera.so:/system/lib/libhuaweiprocessing.so|libshim_icu.so:/system/lib/libcamera_core.so|libshim_gui.so:/system/lib/libcamera_core.so|libshim_camera.so:/system/lib/libsensorsgps.so|libshim_gui.so:/system/vendor/lib/libwvm.so|libshim_wvm.so":/system/lib/libFNVfbEngineLib.so|libshim_gui.so:/system/bin/recovery-persist|system/lib64/libhw_log.so"
 
     export ANDROID_STORAGE ""
 
@@ -206,24 +206,6 @@ on fs
     mount_all /fstab.hi3635
 
 on post-fs
-    mkdir /splash2/sim 0775 root system
-    mkdir /splash2/sim/offlinelogs 0775 root system
-    write /splash2/sim/offlinelogs/balong_modem1_simoffline.txt  0
-    write /splash2/sim/offlinelogs/balong_modem2_simoffline.txt  0
-    write /splash2/sim/sim_pin_file.bin  "000000"
-
-    chmod 0664 /splash2/sim/offlinelogs/balong_modem1_simoffline.txt
-    chmod 0664 /splash2/sim/offlinelogs/balong_modem2_simoffline.txt
-    chmod 0664 /splash2/sim/sim_pin_file.bin
-
-    chown radio system /splash2/sim/offlinelogs/balong_modem1_simoffline.txt
-    chown radio system /splash2/sim/offlinelogs/balong_modem2_simoffline.txt
-    write /splash2/sim/offlinelogs/slot1_simoffline.txt 0
-    chown root  radio  /splash2/sim/sim_pin_file.bin
-
-    chmod 0664 /splash2/sim/offlinelogs/slot1_simoffline.txt
-
-    chown radio system /splash2/sim/offlinelogs/slot1_simoffline.txt
 
     mkdir /modem_log
     mkdir /modem_log/log
@@ -499,22 +481,22 @@ on boot
     write /sys/block/zram0/disksize 268435456
     swapon_all fstab.hi3635
 	
-     write /proc/sys/net/core/rps_sock_flow_entries 0
-     write /sys/class/net/rmnet0/queues/rx-0/rps_flow_cnt 0
-     write /sys/class/net/rmnet0/queues/rx-0/rps_cpus f
-     write /sys/class/net/rmnet1/queues/rx-0/rps_flow_cnt 0
-     write /sys/class/net/rmnet1/queues/rx-0/rps_cpus f
-     write /sys/class/net/rmnet2/queues/rx-0/rps_flow_cnt 0
-     write /sys/class/net/rmnet2/queues/rx-0/rps_cpus f
-     write /sys/class/net/rmnet3/queues/rx-0/rps_flow_cnt 0
-     write /sys/class/net/rmnet3/queues/rx-0/rps_cpus f
-     write /sys/class/net/rmnet4/queues/rx-0/rps_flow_cnt 0
-     write /sys/class/net/rmnet4/queues/rx-0/rps_cpus f
-     write /sys/class/net/rmnet_ims/queues/rx-0/rps_flow_cnt 0
-     write /sys/class/net/rmnet_ims/queues/rx-0/rps_cpus f
+    write /proc/sys/net/core/rps_sock_flow_entries 0
+    write /sys/class/net/rmnet0/queues/rx-0/rps_flow_cnt 0
+    write /sys/class/net/rmnet0/queues/rx-0/rps_cpus f
+    write /sys/class/net/rmnet1/queues/rx-0/rps_flow_cnt 0
+    write /sys/class/net/rmnet1/queues/rx-0/rps_cpus f
+    write /sys/class/net/rmnet2/queues/rx-0/rps_flow_cnt 0
+    write /sys/class/net/rmnet2/queues/rx-0/rps_cpus f
+    write /sys/class/net/rmnet3/queues/rx-0/rps_flow_cnt 0
+    write /sys/class/net/rmnet3/queues/rx-0/rps_cpus f
+    write /sys/class/net/rmnet4/queues/rx-0/rps_flow_cnt 0
+    write /sys/class/net/rmnet4/queues/rx-0/rps_cpus f
+    write /sys/class/net/rmnet_ims/queues/rx-0/rps_flow_cnt 0
+    write /sys/class/net/rmnet_ims/queues/rx-0/rps_cpus f
 
-     #RIL PERMISSIONS ADDED 2.4.2018
-     chmod 0644 /proc/cmdline
+    chown root radio /proc/cmdline
+    chmod 0666 /proc/cmdline
 
 service charger_huawei /sbin/healthd -c
     class charger
@@ -560,3 +542,10 @@ service perfhub /system/bin/perfhub
     user system
     group system
     disabled
+
+service hisi_bfg /system/bin/start_connectivity_hisi
+    class late_start
+    user root
+    group system
+    oneshot
+    writepid /dev/cpuset/system-background/tasks
