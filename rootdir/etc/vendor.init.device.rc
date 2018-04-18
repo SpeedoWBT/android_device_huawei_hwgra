@@ -38,6 +38,12 @@ on boot
     chown radio radio /sys/class/graphics/fb0/mipi_dsi_bit_clk_upt
     chown system system /sys/class/graphics/fb0/lcd_status
     chown system system /sys/class/graphics/fb0/amoled_pcd_errflag_check
+    chown system system /sys/class/ina231/ina231_0/ina231_debug
+    chown system system /sys/class/ina231/ina231_0/ina231_set
+    chown system system /sys/class/ina231/ina231_0/ina231_value
+    chown system system /sys/class/ina231/ina231_1/ina231_debug
+    chown system system /sys/class/ina231/ina231_1/ina231_set
+    chown system system /sys/class/ina231/ina231_1/ina231_value
     chown system system /sys/class/graphics/fb0/amoled_acl
     chown system system /sys/class/graphics/fb0/amoled_hbm
     chown system system /sys/class/graphics/fb0/lcd_test_config
@@ -54,13 +60,10 @@ on boot
     chown system system /sys/touchscreen/sleep_status
     chown system system /sys/touchscreen/wakeup_gesture_enable
     chown system system /sys/touchscreen/easy_wakeup_gesture
-    chmod 0664 /sys/touchscreen/easy_wakeup_gesture
     chown system system /sys/touchscreen/easy_wakeup_control
     chown system system /sys/touchscreen/easy_wakeup_position
-    chmod 0664 /sys/touchscreen/easy_wakeup_position
     chown system system /sys/touchscreen/easy_wakeup_supported_gestures
     chown system system /sys/touchscreen/touch_glove
-    chmod 0664 /sys/touchscreen/touch_glove
     chown system system /dev/ist510e_debug 
     chown system system /sys/touchscreen/touch_window
     chown system system /sys/touchscreen/touch_sensitivity
@@ -95,6 +98,8 @@ on boot
     chown system system /sys/class/timed_output/vibrator/vibrator_get_reg
     chmod 0660 /dev/drv2605
     chown system system /dev/drv2605
+    chown system system /dev/haptics
+    chown system system /sys/class/timed_output/vibrator/haptic_test
 
     mkdir /dev/immersion 0771 system system
     export VIBE_PIPE_PATH /dev/immersion
