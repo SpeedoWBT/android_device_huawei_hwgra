@@ -111,17 +111,6 @@ ro.product.varprofile=true
 #ro.cofig.onlinevideo.enabled=true
 ro.config.lvm_mode=true
 
-#Modem from phone.props
-
-ro.config.dsds_mode=umts
-persist.radio.modem.cap=89894
-#persist.dsds.enabled=false
-rild.rild1_ready_to_start=false
-rild.libpath=/system/lib64/libbalong-ril.so
-ro.config.hw_dsda=false
-ro.multi.rild=false
-rild.libargs=-mmodem0
-
 #Modem related?
 
 persist.radio.lte_enabled=true
@@ -137,7 +126,6 @@ ro.config.hw_disable_cops=true
 ro.config.hw_ecclist_nocard=1+110,6+119,8+118
 ro.config.hw_ecclist_withcard=1+110,6+119,8+118
 ro.config.hw_globalEcc=true
-persist.radio.apm_sim_not_pwdn=1
 ro.config.hw_useCtrlSocket=true
 ro.config.updatelocation=true
 ro.networkstatus.delaytimer=20
@@ -263,7 +251,6 @@ rild.libpath1=/system/lib64/libbalong-ril.so
 rild.libpath2=/system/lib64/libbalong-ril-1.so
 rild.libargs2=-m modem1
 rild.rilLibPath=/system/lib64/libbalong-ril.so
-rilLibPath=/system/lib64/libbalong-ril.so
 audioril.lib=libhuawei-audio-ril.so
 persist.radio.apm_sim_not_pwdn=1
 ro.config.hw_lte_support=true
@@ -277,3 +264,11 @@ ro.config.hw_device_mode=clg_mode
 ro.config.full_network_support=true
 persist.dsds.enabled=true
 ro.config.dsds_mode=umts
+
+#Modem from phone.props
+
+persist.radio.modem.cap=89894
+rild.rild1_ready_to_start=true
+rild.rild_ready_to_start=true
+ro.config.hw_dsda=true
+ro.multi.rild=true
